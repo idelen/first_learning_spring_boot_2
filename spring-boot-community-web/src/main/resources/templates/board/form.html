@@ -33,8 +33,8 @@
             <th style="padding:13px 0 0 15px;">생성 날짜</th>
             <td>
                 <input type="text" class="col-md-1 form-control input-sm"
-                readonly="readonly" th:value="${board?.createdDate}" ?
-                ${#temporals.format(board.creadtedDate, 'yyyy-MM-dd HH:mm')} : ${board?.createdDate}" />
+                readonly="readonly" th:value="${board?.createdDate} ?
+                ${#temporals.format(board.createdDate, 'yyyy-MM-dd HH:mm')} : ${board?.createdDate}" />
             </td>
         </tr>
         <tr>
@@ -47,7 +47,7 @@
             <th style="padding:13px 0 0 15px;">내용</th>
             <td>
                 <textarea id="board_content" class="col-md-1 form-control input-sm" maxlength="140" rows="7" style="height: 200px;"
-                          th:text="${board?.content}"><</textarea>
+                          th:text="${board?.content}"></textarea>
                 <span class="help-block"></span>
             </td>
         </tr>
@@ -63,7 +63,7 @@
     <div class="pull-right">
         <button th:if="!${board?.idx}" type="button" class="btn btn-primary">저장</button>
         <button th:if="${board?.idx}" type="button" class="btn btn-info">수정</button>
-        <button th:if="$board?.idx}" type="button" class="btn btn-danger">삭제</button>
+        <button th:if="${board?.idx}" type="button" class="btn btn-danger">삭제</button>
     </div>
 </div>
 
