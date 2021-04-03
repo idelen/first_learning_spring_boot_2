@@ -4,7 +4,6 @@ import com.choi.web.annotation.SocialUser;
 import com.choi.web.domain.User;
 import com.choi.web.domain.enums.SocialType;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
