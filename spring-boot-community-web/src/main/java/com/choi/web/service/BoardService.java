@@ -1,6 +1,7 @@
 package com.choi.web.service;
 
 import com.choi.web.domain.Board;
+import com.choi.web.domain.enums.BoardType;
 import com.choi.web.repository.BoardRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

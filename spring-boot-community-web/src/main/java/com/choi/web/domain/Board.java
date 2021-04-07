@@ -17,7 +17,7 @@ public class Board implements Serializable {
 
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long idx;
 
     @Column
