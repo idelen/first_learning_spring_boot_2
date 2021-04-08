@@ -1,0 +1,9 @@
+spring:
+  datatsource:
+    url: jdbc:mysql://127.0.0.1:3306/testdb
+    username : admin
+    password : admin11
+    driver-clas-name: com.mysql.jdbc.Driver
+server:
+  port: 8081
+
